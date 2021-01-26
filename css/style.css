@@ -125,6 +125,7 @@ ul {
 
 
 .sub_menu {
+    display: none;
     position: absolute;
     top: 67px;
     margin-left: 112px;
