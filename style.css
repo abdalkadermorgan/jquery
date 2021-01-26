@@ -1,0 +1,23 @@
+body {
+    margin: 0%;
+}
+#mainslide .container .slickslide .slider img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+.arrow_prev {
+    position: absolute;
+    top:20px
+}
+
+#mainslide {
+    width: 100%;
+}
+#mainslide .container{
+   width: 100%;
+}
+
+p {
+    font-size: 100px;
+}
