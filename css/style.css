@@ -7,6 +7,7 @@ body {
 
     display: block;
     width: 100%;
+    height: 730px;
 }
 
 #mainslide span{
@@ -21,13 +22,13 @@ body {
 }
 #mainslide .arrow_prev {
     position: absolute;
-    top:36%;
+    top:50%;
     left: 50px;
 }
 
 #mainslide .arrow_next {
     position: absolute;
-    top:36%;
+    top:50%;
     right: 50px;
 }
 
@@ -46,10 +47,24 @@ body {
     height: 100px;
 }
 
+.navigation {
+    z-index: 2;
+}
+
 .navigation .icon_nav button {
     background-color: transparent;
     border: none;
+
 }
+p{
+    width: 145px;
+    position: absolute;
+    top: 80%;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
 
 .icon_nav {
     width: 200px; 
@@ -59,6 +74,7 @@ body {
 #mainslide .nav_bar .icon_nav span {
     position: relative;
     font-size: 25px;
+    margin-left: 9px;
 
 }
 
@@ -73,6 +89,18 @@ body {
     padding: 12px;
     color: white;
     font-weight: bold;
+}
+
+.fa-angle-left {
+    float: right;
+    padding-right: 6px;
+    color: white;
+}
+.fa-angle-right {
+    display: none !important;
+    float: right;
+    padding-right: 6px;
+    color: white;
 }
 
 .nav_bar {
@@ -91,7 +119,6 @@ body {
 }
 .nav {
     background-color: rgb(243, 201, 14);
-    width: 128px;
 }
 .navigation li{
     padding-top:5px;
@@ -123,6 +150,7 @@ ul {
 #mainslide .navigation .nav > li a {
     color: white;
     text-decoration: none;
+    font-size: 13px;
 }
 
 
@@ -130,7 +158,7 @@ ul {
     display: none;
     position: absolute;
     top: 67px;
-    margin-left: 112px;
+    margin-left: 184px;
     border: 1px solid black;
     text-align: left;
     background-color: rgb(243, 201, 14);
@@ -138,20 +166,29 @@ ul {
 }
 
 .nav {
-display: none;
+    display: none;
+    margin-top: -46px;
+    padding-top: 55px;
 
 }
+
 
 .nav_bar .navigation .nav .menu:hover .sub_menu{
     display: block;
+    
+}
+.nav_bar .navigation .nav .menu:hover .fa-angle-right{
+    display: block !important;
+    
 }
 
-
-
+.nav_bar .navigation .nav .menu:hover .fa-angle-left{
+    display: none !important;
     
-.nav_bar .navigation .icon_nav button:focus{
-    background-color: rgb(243, 201, 14);
-    border: none;
+}
+
+.nav_bar .navigation .icon_nav .drop:focus .menu_text{
+    color: rgb(201, 182, 149) !important;
 }
 
 
@@ -160,6 +197,9 @@ display: none;
 
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
+    #mainslide .container .slickslide .slider img{
+        height: 580px;
+    }
     .nav_bar {
         margin-left: 50px;
     }
@@ -169,21 +209,46 @@ display: none;
 
     .container .fas {
         width: 13px;
-        height: 13  px;
+        height: 13px;
         font-size: 14px;
         border: 2px solid white;
         border-radius: 100%;
         padding: 8px;
+        top: 2%;
     }
     .sub_menu {
         display: none;
+        width: 155;
+        margin-left: 129px;
+    }
+    #mainslide .arrow_prev {
+        left: 5px;
+    }
+    #mainslide .arrow_next {
+        right: 5px;
+    }
+    .navigation {
+        width: 145px;
+    }
+    #mainslide .navigation .nav > li a {
+        font-size: 10px;
     }
 
 }
 
 @media (max-width: 575.98px) {
+    p{
+        font-size: 10px;
+    }
+    #mainslide .container .slickslide .slider img{
+        height: auto;
+    }
     .nav_bar {
-        margin-left: 55px;
+        margin-left: 50px;
+    }
+
+    .nav {
+        width: 140px;
     }
     .logo {
         margin-right: 10px;
@@ -199,12 +264,12 @@ display: none;
     }
 
     #mainslide .arrow_next , #mainslide .arrow_prev {
-        top: 20%;
-        right: 28px;
+
+        right: 5px;
     }
 
     #mainslide .arrow_prev {
-        left: 28px;
+        left: 5px;
     }
 
     .logo img {
@@ -231,19 +296,25 @@ display: none;
         font-size: 14px;
     }
 
-    .show {
-        margin: 0 8px;
-    }
+
     .icon_nav {
         padding: 1px 8px;
     }
 
     .sub_menu {
-        width: 120px;
+        margin-left: 132px;
+        height: 200px;
+        width: 178px;
     }
     .sub_menu li {
+        padding: 0 7px;
+        padding-top: 3px;
+    }
+
+    #mainslide .navigation .nav > li a {
         font-size: 10px;
     }
+    
 
 }
 
